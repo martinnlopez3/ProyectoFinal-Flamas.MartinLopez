@@ -1,0 +1,18 @@
+.galeria_img{
+
+    -webkit-animation:rotate-in-center .3s cubic-bezier(.25,.46,.45,.94) both;
+    animation:rotate-in-center .3s cubic-bezier(.25,.46,.45,.94) both;
+
+    @include xlarge{
+        padding: .5rem;
+    }
+
+}
+
+ @for $galeria from 1 through 20 {
+    .img#{$galeria}{
+        animation-delay: $galeria*0.3s;
+    }
+ }
+
+@-webkit-keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}

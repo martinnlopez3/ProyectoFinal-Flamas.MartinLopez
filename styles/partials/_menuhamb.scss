@@ -1,0 +1,141 @@
+.titulo_menu_hamburguesas{
+    color: rgb(0, 0, 0);
+    margin-block: 2rem;
+    text-align: center; 
+}
+.burga{ 
+    display: flex ;
+    justify-content: center;
+    background-color: $secondarycolor;
+    margin-left:3rem ;
+    padding-right: 18rem;
+    max-width: 95%;
+
+    @include xlarge{
+        display: inline-block;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    @include large {
+        display: inline-block;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    @include medium{
+        display: inline-block;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    @include small{
+        display: inline-block;
+    }
+
+.contenedor_burgaimg{
+    display: flex;
+justify-content: center;
+    
+
+}
+
+
+
+    .burga_img{
+        
+        
+        border-radius: 2.5rem;
+        padding: 1.5rem;
+
+        &:hover{
+            transform: scale(1.1);
+        transition: 1s;
+        }
+
+        // @include xlarge{
+        //     justify-content: center;
+            
+        // }
+        // @include large{
+        //     justify-content: center;
+        // }
+        // @include small{
+        //     justify-content: center;
+        // }
+
+    }
+}
+.contenedor_texto_menu{
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    // margin-left: 4rem;
+    
+    @include xlarge{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    @include large{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    @include small{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    .contenedor_texto_descripcion{
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        @include xlarge{
+            font-weight: 400;
+        }
+        @include large{
+            
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        @include small{
+            
+            font-size: .9rem;
+            font-weight: 400;
+        }
+        
+    }
+    .contenedor_texto_precio{
+        display: flex;
+        margin-top: 2rem;
+        color:rgb(0, 0, 0);
+        font-weight: 400;
+
+        @include xlarge {
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 300;  
+        }
+        @include large{
+            justify-content: center;
+            font-size: .9rem;
+            font-weight: 300;
+        }
+        @include small{
+            justify-content: center;
+            font-size: .7rem;
+            font-weight: 300;
+        }
+
+        .precio1,.precio2,.precio3{
+            margin-left: 20px;
+            border: 1px solid #000000;
+            padding: .5rem; 
+
+            &:hover{
+                background-color: $maincolor;
+                color: white;
+                transition: 1s;
+            }
+        }
+    }
+}

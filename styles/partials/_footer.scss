@@ -1,0 +1,144 @@
+.contenedor_footer{
+        display: flex;
+        background-color: $secondarycolor;
+        margin-top: 5rem;
+    }
+
+    .loguito1_footer,.loguito2_footer{
+        margin-top: 2.2rem;
+
+        @include large{
+            max-width: 100px;
+            max-height: 120px;
+        }
+        @include medium{
+            max-width: 80px;
+            max-height: 100px;
+        }
+        @include small{
+            max-width: 60px;
+            max-height: 80px;
+        }
+    }
+
+    .contenedor_info_footer{
+        margin: auto;
+        margin-top: 2rem;
+
+        .titulo_footer,.direc_footer{
+            text-align: center;
+            font-weight: bold;
+
+        }
+        .ul_footer{
+            @include large{
+                display:inline-flex;
+                flex-wrap:nowrap;
+            }
+            @include medium{
+                display:inline-flex;
+                flex-wrap:nowrap;
+            }
+            @include small{
+                display:inline-flex;
+                flex-wrap:nowrap;
+            }
+        
+        li {
+            font-size: 1.2rem;
+
+            @include large{
+                font-size: 17px;
+            }
+            @include medium {
+                font-size: 13px;
+            }
+            @include small{
+                font-size: 10px;
+            }
+            
+            .icon_footer{
+                @include large{
+                    font-size: 17px;
+                    }
+                @include medium{
+                    font-size: 13px;
+                    }
+                @include small{
+                    font-size: 10px;
+                }        
+                }
+            }
+        }
+    }
+
+.contenedor_boton{
+    display: flex;
+    background-color: $secondarycolor;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    justify-content: center;
+
+    :hover{
+        
+        background-color: $maincolor;
+        }
+
+    .boton_footer{
+
+        border: .8px solid $maincolor;
+        padding-inline:5rem;
+        :hover{
+            color: #ffffff;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px ;
+            }
+    }
+}
+
+.loguito_footer{
+
+    @include large{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    }
+    @include medium{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    }
+    @include small{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    }
+}
+
+.titulo_footer{
+    @include large{
+        font-size: 25px;
+    }
+    @include medium{
+        font-size: 20px;
+    }
+    @include small{
+        font-size: 18px;
+    }
+}
+
+.direc_footer{
+    @include large{
+        font-size: 17px;
+    }
+    @include medium{
+        font-size: 14px;
+    }       
+    @include small{
+        font-size: 13px;
+    }      
+}   

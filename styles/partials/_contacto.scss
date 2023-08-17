@@ -1,0 +1,12 @@
+.contenedor_contacto{
+    gap:4rem;
+
+    .horarios{
+        list-style-type: none;
+        margin-block: 3rem;
+        
+        li{
+            font-size: 20px;
+        }
+    }
+}
